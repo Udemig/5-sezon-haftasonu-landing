@@ -1,0 +1,91 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.logo{
+    width: 75px;
+    height: 75px;
+}
+.logo img{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+nav ul{
+    display: flex;
+    gap: 50px;
+}
+
+.mainContainer{
+    width: 100%;
+    height: calc(100vh - 75px);
+    display: flex;
+}
+
+.leftSide{
+    width: 50%;
+    height: 50%;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.rightSide{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primaryButton{
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: #66B0F0;
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.primaryButton:hover{
+    border: 1px solid #66B0F0;
+    background-color: white;
+    color: #66B0F0;
+}
+
+.rightImg{
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    0%{
+        margin-bottom: 0px;
+    }
+    50%{margin-bottom: 50px;}
+    100%{
+        margin-bottom: 0px;
+    }
+}
